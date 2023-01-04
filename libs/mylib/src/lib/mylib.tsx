@@ -5,7 +5,6 @@ export function Mylib(props: MylibProps) {
   return (
     <div>
       <h1>Welcome to Mylib!</h1>
-      test
     </div>
   );
 }
