@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Mylib } from '@nx-problem/mylib';
 import { Link, Route, Routes } from 'react-router-dom';
 
 const Shop = React.lazy(() => import('shop/Module'));
@@ -22,11 +22,12 @@ export function App() {
           <Link to="/cart">Cart</Link>
         </li>
       </ul>
+      Mylib used from the host:
+      <Mylib />
+      <hr />
       <Routes>
         <Route path="/" element={<span>This is a host app</span>} />
-
         <Route path="/shop" element={<Shop />} />
-
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </React.Suspense>
